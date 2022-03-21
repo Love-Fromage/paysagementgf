@@ -17,7 +17,7 @@ const Hero = () => {
 						<div className={classes.cont2eTitre}>
 							<h1>Paysagement</h1>
 							<h1>
-								<span>GF</span>
+								<span>GF </span>
 								<span>Les Portugais</span>
 							</h1>
 						</div>

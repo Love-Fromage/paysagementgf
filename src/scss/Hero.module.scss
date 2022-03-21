@@ -41,6 +41,17 @@
 			font-style: italic;
 		}
 		.cont2eTitre {
+			h1 {
+				text-transform: uppercase;
+				span {
+					color: $rouge-nav;
+					&:last-child {
+						text-transform: none;
+						font-weight: normal;
+						font-style: italic;
+					}
+				}
+			}
 		}
 		.contQuote {
 			.quote1,
