@@ -1,0 +1,159 @@
+@import "./scss-variables.scss";
+.contNav {
+	background-color: #ed0213;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	position: relative;
+	height: 75px;
+	color: #fff;
+	overflow: hidden;
+	.logo {
+		width: 160px;
+		svg {
+			width: 170px;
+			height: 57px;
+		}
+	}
+}
+.contHam {
+	width: 63px;
+	height: 63px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
+	z-index: 5;
+	span {
+		background: #fff;
+		width: 20px;
+		margin-bottom: 5px;
+		height: 2px;
+	}
+	span:nth-child(2) {
+		// visibility: visible;
+	}
+
+	span:first-child {
+		transform: translateY(0px) translateX(0px) rotate(0deg);
+		animation: xx1 200ms ease forwards;
+	}
+	span:last-child {
+		transform: translateY(0px) translateX(0px) rotate(0deg);
+		animation: xx2 200ms ease forwards;
+	}
+}
+@keyframes xx1 {
+	from {
+		transform: translateY(10px) translateX(0px) rotate(45deg);
+	}
+	to {
+		transform: translateY(0px) translateX(0px) rotate(0deg);
+	}
+}
+@keyframes xx2 {
+	from {
+		transform: translateY(-3px) translateX(0px) rotate(-45deg);
+	}
+	to {
+		transform: translateY(0px) translateX(0px) rotate(0deg);
+	}
+}
+
+nav {
+	overflow: hidden;
+	position: absolute;
+	right: 0;
+	top: 0;
+	background-color: $vert-nav;
+	padding-top: 10px;
+	height: 90vh;
+	width: fit-content;
+	margin-left: auto;
+
+	ul {
+		padding-top: 75px;
+		margin-top: 0;
+		list-style: none;
+		text-align: right;
+		color: #fff;
+		width: fit-content;
+		margin-left: auto;
+		li {
+			margin-right: 15px;
+			margin-left: auto;
+			padding: 5px;
+			width: fit-content;
+			text-align: right;
+		}
+		.ligne {
+			padding: 0;
+			margin-left: auto;
+			// margin-right: 15px;
+			background-color: #fff;
+			width: 35vw;
+			height: 1px;
+		}
+	}
+}
+.openNav {
+	position: relative;
+	overflow: hidden;
+	animation: slideNavOpen forwards ease 200ms;
+}
+.closeNav {
+	position: relative;
+	overflow: hidden;
+	animation: slideNavClose forwards ease 200ms;
+}
+
+@keyframes slideNavOpen {
+	from {
+		right: -50vw;
+	}
+	to {
+		right: 0;
+	}
+}
+@keyframes slideNavClose {
+	from {
+		right: 0;
+		// width: 0vw;
+	}
+	to {
+		// width: 50vw;
+		right: -100vw;
+	}
+}
+
+.hamClicked {
+	span:nth-child(2) {
+		visibility: hidden;
+	}
+
+	span:first-child {
+		transform: translateY(0px) translateX(0px) rotate(0deg);
+		animation: x1 200ms ease forwards;
+	}
+	span:last-child {
+		transform: translateY(0px) translateX(0px) rotate(0deg);
+		animation: x2 200ms ease forwards;
+	}
+}
+@keyframes x1 {
+	from {
+		transform: translateY(0px) translateX(0px) rotate(0deg);
+	}
+	to {
+		transform: translateY(10px) translateX(0px) rotate(45deg);
+	}
+}
+@keyframes x2 {
+	from {
+		transform: translateY(0px) translateX(0px) rotate(0deg);
+	}
+	to {
+		transform: translateY(-3px) translateX(0px) rotate(-45deg);
+	}
+}
