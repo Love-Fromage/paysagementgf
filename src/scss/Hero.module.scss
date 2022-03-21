@@ -1,1 +1,40 @@
 @import "./scss-variables";
+@import "sass-rem";
+.hero {
+	background-color: rgb(32, 174, 187);
+	height: 411px;
+	width: 80%;
+	margin-left: auto;
+	margin-left: auto;
+	.contText {
+		background-color: rgba(255, 255, 255, 0.452);
+		padding-top: 30px;
+		.petitTitre {
+			width: 75%;
+			margin-left: auto;
+			margin-right: auto;
+
+			h1 {
+				margin: 0;
+				font-size: rem(23px);
+			}
+			position: relative;
+			top: -10px;
+			background-color: $rouge-nav;
+			font-style: italic;
+		}
+		.cont2eTitre {
+		}
+		.contQuote {
+			.quote1,
+			.quote2 {
+			}
+			.quote1 {
+			}
+			.quote2 {
+			}
+		}
+		.demandeDevis {
+		}
+	}
+}

@@ -9,10 +9,30 @@ const Hero = () => {
 		<div>
 			{/* code  pour le mobile drette ici  */}
 			{isTabletOrMobile && (
-				<div>
-					<div>test drive</div>
-					<div>test drive</div>
-					<div>test drive</div>
+				<div className={classes.hero}>
+					<div className={classes.contText}>
+						<div className={classes.petitTitre}>
+							<h1>Plus de 20 ans d'expérience</h1>
+						</div>
+						<div className={classes.cont2eTitre}>
+							<h1>Paysagement</h1>
+							<h1>
+								<span>GF</span>
+								<span>Les Portugais</span>
+							</h1>
+						</div>
+						<div className={classes.contQuote}>
+							<div className={classes.quote1}></div>
+							<p>
+								On travaille pour vous comme si c'était pour
+								nous !
+							</p>
+							<div className={classes.quote2}></div>
+						</div>
+						<div className={classes.demandeDevis}>
+							<p>Demandez un devis</p>
+						</div>
+					</div>
 				</div>
 			)}
 		</div>
