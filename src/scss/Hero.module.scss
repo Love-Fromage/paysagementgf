@@ -1,22 +1,39 @@
 @import "./scss-variables";
 @import "sass-rem";
 .hero {
-	background-color: rgb(32, 174, 187);
+	// background-color: rgb(32, 174, 187);
+	background-image: url("https://static.wixstatic.com/media/3a257b_91e1e193ac8c498faec1618bd4585a0d~mv2.jpeg/v1/fill/w_640,h_822,al_b,q_85,usm_0.66_1.00_0.01,enc_auto/3a257b_91e1e193ac8c498faec1618bd4585a0d~mv2.jpeg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
 	height: 411px;
-	width: 80%;
+	// width: 80%;
 	margin-left: auto;
-	margin-left: auto;
+	margin-right: auto;
+
+	padding-top: 25px;
+	h1 {
+		margin-top: 0;
+		margin-bottom: 0;
+	}
 	.contText {
-		background-color: rgba(255, 255, 255, 0.452);
-		padding-top: 30px;
+		background-color: rgba(255, 255, 255, 0.65);
+		width: 85%;
+		margin-left: auto;
+		margin-right: auto;
+		// padding-top: 30px;
 		.petitTitre {
-			width: 75%;
+			width: 90%;
 			margin-left: auto;
 			margin-right: auto;
 
 			h1 {
 				margin: 0;
+				text-align: center;
+				font-weight: normal;
+				color: #fff;
 				font-size: rem(23px);
+				margin-bottom: 0;
 			}
 			position: relative;
 			top: -10px;
