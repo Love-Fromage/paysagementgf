@@ -8,6 +8,7 @@
 	height: 75px;
 	color: #fff;
 	overflow: hidden;
+	margin-bottom: 50px;
 	.logo {
 		width: 160px;
 		svg {
@@ -98,8 +99,9 @@ nav {
 	}
 }
 .openNav {
-	position: relative;
-	top: -75px;
+	position: absolute;
+
+	top: 0px;
 	overflow: hidden;
 	animation: slideNavOpen forwards ease 200ms;
 }

@@ -453,16 +453,19 @@ const Header = () => {
 					{toggleMenu ? closeIcon : hamburgerIcon}
 				</div>
 			)}
-
-			<nav className={toggleMenu ? classes.openNav : classes.closeNav}>
-				<ul>
-					<li>Prestations</li>
-					<li className={classes.ligne}></li>
-					<li>Réalisation</li>
-					<li className={classes.ligne}></li>
-					<li>Devis & contact</li>
-				</ul>
-			</nav>
+			{toggleMenu && (
+				<nav
+					className={toggleMenu ? classes.openNav : classes.closeNav}
+				>
+					<ul>
+						<li>Prestations</li>
+						<li className={classes.ligne}></li>
+						<li>Réalisation</li>
+						<li className={classes.ligne}></li>
+						<li>Devis & contact</li>
+					</ul>
+				</nav>
+			)}
 		</div>
 	);
 };
