@@ -1,0 +1,78 @@
+@import "./scss-variables";
+@import "sass-rem";
+
+.contCartes {
+	.chapeau {
+		display: flex;
+		height: fit-content;
+
+		position: relative;
+		width: fit-content;
+		top: -100px;
+		z-index: 0;
+
+		svg {
+			width: 20vw;
+		}
+	}
+	.carte {
+		position: relative;
+		top: -150px;
+		z-index: 1;
+		width: 100vw;
+		height: 215px;
+		margin-bottom: 25px;
+		display: flex;
+		justify-content: flex-end;
+		align-items: flex-end;
+
+		&:nth-child(2) {
+			background-image: url("../images/3a257b_9e35458ead224f5e920d32be44af3c78_mv2.webp");
+			background-position: center;
+			background-size: cover;
+		}
+		&:nth-child(3) {
+			background-image: url("../images/3a257b_9659b4cf95024e98ac2df4c0237e9c17_mv2.webp");
+			background-position: center;
+			background-size: cover;
+		}
+		&:nth-child(4) {
+			background-image: url("../images/3a257b_54b1b8363e854bfe9729ca337ceb6613_mv2.webp");
+			background-position: center;
+			background-size: cover;
+		}
+		&:nth-child(5) {
+			background-image: url("../images/3a257b_421562afeab54d269cb181715468cd4f_mv2.webp");
+			background-position: center;
+			background-size: cover;
+		}
+		&:nth-child(6) {
+			background-image: url("../images/3a257b_fe6ca7dab52e41ee84d5f3e33c05e4e8_mv2.webp");
+			background-position: center;
+			background-size: cover;
+		}
+		&:nth-child(7) {
+			background-image: url("../images/3a257b_fbdca02129c24148af89e4b2af599093_mv2.webp");
+			background-position: center;
+			background-size: cover;
+		}
+		.contCaption {
+			// margin-left: auto;
+			// margin-right: auto;
+			display: flex;
+			width: 70vw;
+			justify-content: center;
+			align-items: center;
+			background-color: $vert-nav;
+			p {
+				// margin: ;
+				color: #fff;
+				margin-top: 0;
+				margin-bottom: 0;
+				padding-top: 10px;
+				padding-bottom: 10px;
+				font-size: rem(16.8px);
+			}
+		}
+	}
+}
