@@ -2,11 +2,11 @@
 @import "sass-rem";
 .hero {
 	// background-color: rgb(32, 174, 187);
-	background-image: url("https://static.wixstatic.com/media/3a257b_91e1e193ac8c498faec1618bd4585a0d~mv2.jpeg/v1/fill/w_640,h_822,al_b,q_85,usm_0.66_1.00_0.01,enc_auto/3a257b_91e1e193ac8c498faec1618bd4585a0d~mv2.jpeg");
+	background-image: url("../images/3a257b_91e1e193ac8c498faec1618bd4585a0d_mv2.webp");
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
-	height: 411px;
+	height: 55vh;
 	// width: 80%;
 	margin-left: auto;
 	margin-right: auto;
@@ -54,15 +54,100 @@
 			}
 		}
 		.contQuote {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
 			.quote1,
 			.quote2 {
+				width: fit-content;
+				display: flex;
+				// margin-right: 1"00vw;
+				// margin-left: 0;"
+
+				// flex-direction: column;
+				// justify-content: flex-start;
+				// align-items: center;
+				margin: 0;
+
+				svg {
+					width: 10vw;
+					height: fit-content;
+					color: #000;
+				}
 			}
 			.quote1 {
+				margin-top: 5px;
+				margin-right: auto;
+				margin-left: 12vw;
 			}
 			.quote2 {
+				margin-top: 0;
+				margin-right: 12vw;
+				margin-left: auto;
+				svg {
+					transform: rotate(180deg);
+				}
+			}
+			p {
+				display: inline-block;
+				// justify-content: center;
+				margin-left: auto;
+				letter-spacing: 0.05em;
+				margin-right: auto;
+				width: fit-content;
+				text-align: left;
+				margin-top: 5px;
+				margin-bottom: 5px;
+				font-weight: bold;
+				font-size: rem(30px);
 			}
 		}
 		.demandeDevis {
+			position: relative;
+			top: 25px;
+			display: flex;
+			flex-direction: row;
+			margin-left: auto;
+			margin-right: auto;
+			height: 60px;
+			background-color: #fff;
+			width: 90%;
+
+			p {
+				font-weight: bold;
+				// padding-top: 5px;
+				margin-top: auto;
+				margin-bottom: auto;
+
+				margin-left: auto;
+				margin-right: auto;
+				height: fit-content;
+				font-size: rem(25px);
+				color: $rouge-nav;
+			}
+			.contTicket {
+				position: relative;
+				left: 14px;
+				.tiBoute1,
+				.tiBoute2,
+				.tiBoute {
+					width: 5px;
+					height: 5px;
+					border: 5px solid transparent;
+					background-color: #fff;
+				}
+				.tiBoute1 {
+					clip-path: polygon(0 0, 0% 100%, 100% 0);
+				}
+				.tiBoute2 {
+					clip-path: polygon(0 100%, 100% 100%, 0 0);
+				}
+				.tiBoute {
+					clip-path: polygon(0 0, 0% 100%, 100% 50%);
+
+					// margin-bottom: 5px;
+				}
+			}
 		}
 	}
 }

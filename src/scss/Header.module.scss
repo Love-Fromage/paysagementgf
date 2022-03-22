@@ -104,13 +104,13 @@ nav {
 
 	top: 0px;
 	overflow: hidden;
-	animation: slideNavOpen forwards ease 200ms;
+	animation: slideNavOpen forwards 200ms;
 }
 .closeNav {
 	position: relative;
 	top: -75px;
 	overflow: hidden;
-	animation: slideNavClose forwards ease 200ms;
+	animation: slideNavClose forwards 200ms;
 }
 
 @keyframes slideNavOpen {
