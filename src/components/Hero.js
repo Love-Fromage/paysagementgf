@@ -84,14 +84,14 @@ const Hero = (props) => {
 						</div>
 						<div className={classes.demandeDevis}>
 							<p>Demandez un devis</p>
-							<div class={classes.contTicket}>
+							{/* <div class={classes.contTicket}>
 								<div class={classes.tiBoute1}></div>
 								<div class={classes.tiBoute}></div>
 								<div class={classes.tiBoute}></div>
 								<div class={classes.tiBoute}></div>
 
 								<div class={classes.tiBoute2}></div>
-							</div>
+							</div> */}
 						</div>
 					</div>
 				</div>

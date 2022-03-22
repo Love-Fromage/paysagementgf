@@ -143,6 +143,7 @@
 				color: $rouge-nav;
 			}
 			.contTicket {
+				visibility: hidden;
 				position: relative;
 				left: 14.5px;
 				.tiBoute1,
@@ -161,6 +162,7 @@
 					clip-path: polygon(0 100%, 100% 100%, 0 0);
 				}
 				.tiBoute {
+					// width: 10px;
 					clip-path: polygon(0 0, 0% 100%, 100% 50%);
 
 					// margin-bottom: 5px;
