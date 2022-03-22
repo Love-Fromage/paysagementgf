@@ -87,6 +87,7 @@ const Hero = () => {
 								<div class={classes.tiBoute1}></div>
 								<div class={classes.tiBoute}></div>
 								<div class={classes.tiBoute}></div>
+								<div class={classes.tiBoute}></div>
 
 								<div class={classes.tiBoute2}></div>
 							</div>
