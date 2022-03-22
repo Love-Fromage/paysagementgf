@@ -4,6 +4,7 @@ import { useMediaQuery } from "react-responsive";
 import Hero from "./components/Hero";
 import Prestations from "./components/Prestations";
 import Cartes from "./components/Cartes";
+import NosRealisation from "./components/NosRealisation";
 
 function App() {
 	const isTabletOrMobile = useMediaQuery({ query: "(max-width:1224px)" });
@@ -23,6 +24,10 @@ function App() {
 				queryDesktop={isDesktopOrLaptop}
 			/>
 			<Cartes
+				queryMobile={isTabletOrMobile}
+				queryDesktop={isDesktopOrLaptop}
+			/>
+			<NosRealisation
 				queryMobile={isTabletOrMobile}
 				queryDesktop={isDesktopOrLaptop}
 			/>
