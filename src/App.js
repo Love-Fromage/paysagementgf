@@ -5,6 +5,7 @@ import Hero from "./components/Hero";
 import Prestations from "./components/Prestations";
 import Cartes from "./components/Cartes";
 import NosRealisation from "./components/NosRealisation";
+import VosTemoignages from "./components/VosTemoignages";
 
 function App() {
 	const isTabletOrMobile = useMediaQuery({ query: "(max-width:1224px)" });
@@ -28,6 +29,10 @@ function App() {
 				queryDesktop={isDesktopOrLaptop}
 			/>
 			<NosRealisation
+				queryMobile={isTabletOrMobile}
+				queryDesktop={isDesktopOrLaptop}
+			/>
+			<VosTemoignages
 				queryMobile={isTabletOrMobile}
 				queryDesktop={isDesktopOrLaptop}
 			/>

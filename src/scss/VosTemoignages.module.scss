@@ -1,0 +1,24 @@
+@import "./scss-variables";
+@import "sass-rem";
+
+.contTem {
+	.titre {
+		h1 {
+			span {
+				color: $vert-nav;
+			}
+		}
+	}
+	.image {
+		svg {
+		}
+	}
+	.contTemoins {
+		.comment {
+			img {
+			}
+			p {
+			}
+		}
+	}
+}
