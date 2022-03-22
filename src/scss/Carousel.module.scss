@@ -1,0 +1,82 @@
+@import "./scss-variables";
+@import "sass-rem";
+
+.noir {
+	background-color: #000;
+	height: 40vh;
+}
+.carousel {
+	height: 500px;
+}
+.carouselItem {
+	img {
+		height: 50px;
+	}
+	.img2 {
+		height: 100vh;
+	}
+}
+
+.fadeCarou {
+	// animation-play-state: initial;
+	animation: bande-fade 200ms backwards;
+}
+@keyframes bande-fade {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+.contCarouPerso {
+	width: 90vw;
+	height: fit-content;
+	display: flex;
+	justify-content: center;
+	margin-left: auto;
+	margin-right: auto;
+	overflow: hidden;
+
+	.prevBtn,
+	.nextBtn {
+		margin-top: auto;
+		margin-bottom: auto;
+		margin-left: auto;
+		margin-right: auto;
+		cursor: pointer;
+	}
+
+	.prevBtn {
+		transform: scaleX(-1);
+	}
+
+	.fenetre {
+		width: 60vw;
+		display: flex;
+		overflow: hidden;
+		height: 400px;
+		.bande {
+			display: flex;
+			height: inherit;
+
+			.contInnerBande {
+				width: 60vw;
+				height: auto;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				// overflow: hidden;
+			}
+			// flex-wrap: nowrap;
+			// width: 100%;
+			img {
+				width: 100%;
+				height: auto;
+				margin: auto;
+			}
+		}
+	}
+}
+
+// @import "../../node_modules/bootstrap/scss/bootstrap.scss";

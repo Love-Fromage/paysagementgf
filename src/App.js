@@ -6,6 +6,8 @@ import Prestations from "./components/Prestations";
 import Cartes from "./components/Cartes";
 import NosRealisation from "./components/NosRealisation";
 import VosTemoignages from "./components/VosTemoignages";
+import LeCarousel from "./components/LeCarousel";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
 	const isTabletOrMobile = useMediaQuery({ query: "(max-width:1224px)" });
@@ -32,6 +34,11 @@ function App() {
 				queryMobile={isTabletOrMobile}
 				queryDesktop={isDesktopOrLaptop}
 			/>
+			<LeCarousel
+				queryMobile={isTabletOrMobile}
+				queryDesktop={isDesktopOrLaptop}
+			/>
+
 			<VosTemoignages
 				queryMobile={isTabletOrMobile}
 				queryDesktop={isDesktopOrLaptop}
