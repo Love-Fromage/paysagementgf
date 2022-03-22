@@ -1,17 +1,20 @@
 import React, { useState } from "react";
 import { Link as Scroller } from "react-scroll";
-import { useMediaQuery } from "react-responsive";
+// import { useMediaQuery } from "react-responsive";
 import classes from "../scss/Header.module.scss";
 
-const Header = () => {
+const Header = (props) => {
 	const [toggleMenu, setToggleMenu] = useState(false);
-	const isDesktopOrLaptop = useMediaQuery({
-		query: "(min-width: 1224px)",
-	});
+	// const isDesktopOrLaptop = useMediaQuery({
+	// 	query: "(min-width: 1224px)",
+	// });
 	const hamburgerIcon = (
 		<div
 			className={classes.contHam}
-			onClick={() => setToggleMenu(!toggleMenu)}
+			onClick={() => {
+				setToggleMenu(!toggleMenu);
+				window.scroll();
+			}}
 		>
 			<span></span>
 			<span></span>
@@ -28,12 +31,18 @@ const Header = () => {
 			<span></span>
 		</div>
 	);
+	function preventScroll() {
+		document.body.style.overflow = "hidden";
+	}
+	function resumeScroll() {
+		document.body.style.overflow = "visible";
+	}
 
-	const isTabletOrMobile = useMediaQuery({ query: "(max-width: 1224px)" });
+	// const isTabletOrMobile = useMediaQuery({ query: "(max-width: 1224px)" });
 	return (
 		<div>
 			{/* code pour le mobile */}
-			{isTabletOrMobile && (
+			{props.queryMobile && (
 				<div className={classes.contNav}>
 					<div className={classes.logo}>
 						<svg
@@ -453,6 +462,7 @@ const Header = () => {
 					{toggleMenu ? closeIcon : hamburgerIcon}
 				</div>
 			)}
+			{toggleMenu ? preventScroll() : resumeScroll()}
 			{toggleMenu && (
 				<nav
 					className={toggleMenu ? classes.openNav : classes.closeNav}
