@@ -1,2 +1,66 @@
 @import "./scss-variables";
 @import "sass-rem";
+
+.contPrestation {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin-left: auto;
+	margin-right: auto;
+	width: 90vw;
+
+	.titre {
+		display: flex;
+		justify-content: center;
+		position: relative;
+		height: fit-content;
+		align-items: center;
+		h1 {
+			// display: flex;
+			width: 100%;
+			margin-bottom: 0;
+			font-size: rem(35px);
+			text-align: left;
+			margin-bottom: 50px;
+			span {
+				font-size: rem(30px);
+			}
+		}
+	}
+
+	.contImgTitle {
+		position: absolute;
+		margin-top: 0;
+		top: 40px;
+		left: 60vw;
+		// width: 100%;
+		svg {
+			width: 30vw;
+			height: fit-content;
+		}
+	}
+	.contText {
+		p {
+			text-align: justify;
+			font-size: rem(24px);
+			font-weight: light;
+			// font-family: ;
+		}
+	}
+	.contCTA {
+		display: flex;
+		justify-content: flex-end;
+		align-items: center;
+		p {
+			color: $rouge-nav;
+			font-weight: bold;
+			font-size: rem(24px);
+		}
+		img {
+			margin-left: 15px;
+			width: 15%;
+			margin-top: 22px;
+			margin-bottom: auto;
+		}
+	}
+}

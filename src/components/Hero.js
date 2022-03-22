@@ -14,6 +14,7 @@ const Hero = (props) => {
 						<div className={classes.petitTitre}>
 							<h1>Plus de 20 ans d'expérience</h1>
 						</div>
+
 						<div className={classes.cont2eTitre}>
 							<h1>Paysagement</h1>
 							<h1>
