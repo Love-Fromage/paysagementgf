@@ -49,11 +49,18 @@
 			input {
 				height: 50px;
 				padding-left: 5vw;
-				font-style: italic;
-				font-weight: bold;
 				&::placeholder {
+					font-style: italic;
+					font-weight: bold;
 					opacity: 1;
 					color: #000;
+					transition: 300ms ease;
+				}
+				&:focus-visible {
+					outline: none;
+					&::placeholder {
+						opacity: 0;
+					}
 				}
 			}
 			input:first-child {
@@ -71,6 +78,7 @@
 				}
 			}
 			.merci {
+				margin-top: 50px;
 			}
 			button {
 				width: 50%;

@@ -9,7 +9,12 @@ const Formulaire = (props) => {
 		e.preventDefault();
 
 		emailjs
-			.sendForm("g", "template_27ahu44", e.target, "LEppbJax158JQty2f")
+			.sendForm(
+				"service_vwf3z3k",
+				"template_6trir3g",
+				e.target,
+				"LEppbJax158JQty2f"
+			)
 			.then(
 				(result) => {
 					console.log(result.text);
@@ -141,9 +146,10 @@ const Formulaire = (props) => {
 					<div className={classes.contInputs}>
 						<input type="text" placeholder="Nom" name="nom" />
 						<input
-							type="e-mail"
+							type="email"
 							placeholder="E-mail"
 							name="email"
+							required
 						/>
 						<input
 							type="phone"
@@ -157,7 +163,7 @@ const Formulaire = (props) => {
 
 						{sent ? (
 							<div className={classes.merci}>
-								Merci. Votre message à été envoyer avec succès.
+								Merci pour votre envoi!
 							</div>
 						) : (
 							<button type="submit">Envoyer</button>
