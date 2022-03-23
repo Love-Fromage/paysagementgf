@@ -1,0 +1,21 @@
+import React from "react";
+import classes from "../scss/Modal.module.scss";
+
+const Modalle = (props) => {
+	let modalStyles = {
+		top: window.scrollY,
+	};
+	console.log(props.imgPrope);
+	return (
+		<div className={classes.modalBackground} style={modalStyles}>
+			<div className={classes.modalContainer}>
+				<div onClick={props.closeModalle}>
+					<span></span>
+					<span></span>
+				</div>
+				<img src={props.imgPrope} alt="noppe" />
+			</div>
+		</div>
+	);
+};
+export default Modalle;

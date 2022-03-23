@@ -1,6 +1,17 @@
 @import "./scss-variables";
 @import "sass-rem";
 
+.laTiteImage {
+	display: flex;
+	justify-content: flex-start;
+	margin-left: 15vw;
+	// margin-right: 0;
+	svg {
+		width: 25vw;
+		height: fit-content;
+	}
+}
+
 .noir {
 	background-color: #000;
 	height: 40vh;
@@ -31,7 +42,7 @@
 }
 .imgDeSwiper {
 	max-width: 100%;
-	height: 40vh;
+	height: 50vh;
 }
 .contCarouPerso {
 	width: 90vw;
