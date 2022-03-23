@@ -1,0 +1,62 @@
+@import "./scss-variables";
+@import "sass-rem";
+
+.contFooter {
+	color: #fff;
+	.footerVert {
+		background-color: $vert-nav;
+		.adresse {
+			padding-top: 30px;
+			p {
+				font-weight: normal;
+			}
+		}
+		.email {
+			display: flex;
+			flex-direction: column;
+			padding-bottom: 25px;
+			p {
+				margin-bottom: 0;
+			}
+			a {
+				text-decoration: none;
+				color: #fff;
+				&:visited {
+					color: #fff;
+					text-decoration: none;
+				}
+			}
+			a:first-child {
+			}
+			a:last-child {
+				img {
+					width: 40px;
+				}
+			}
+		}
+	}
+	.footerRouge {
+		background-color: $rouge-nav;
+		padding-bottom: 30px;
+		.titre {
+			h1 {
+				text-align: left;
+				margin-left: 5vw;
+				padding-top: 20px;
+				font-weight: bold;
+				text-transform: uppercase;
+			}
+			a {
+				display: block;
+				color: #fff;
+				text-align: left;
+				margin-left: 5vw;
+				margin-right: auto;
+				font-weight: lighter;
+				&:visited {
+					color: #fff;
+				}
+			}
+		}
+	}
+}

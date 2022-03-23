@@ -9,6 +9,7 @@ import VosTemoignages from "./components/VosTemoignages";
 import LeCarousel from "./components/LeCarousel";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Formulaire from "./components/Formulaire";
+import Footer from "./components/Footer";
 
 function App() {
 	const isTabletOrMobile = useMediaQuery({ query: "(max-width:1224px)" });
@@ -45,6 +46,10 @@ function App() {
 				queryDesktop={isDesktopOrLaptop}
 			/>
 			<Formulaire
+				queryMobile={isTabletOrMobile}
+				queryDesktop={isDesktopOrLaptop}
+			/>
+			<Footer
 				queryMobile={isTabletOrMobile}
 				queryDesktop={isDesktopOrLaptop}
 			/>
