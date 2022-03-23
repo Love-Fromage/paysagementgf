@@ -1,17 +1,18 @@
 import React from "react";
 import classes from "../scss/VosTemoignages.module.scss";
+import avatar from "../images/avatar.png";
 
 const VosTemoignages = (props) => {
 	return (
 		<div>
 			{props.queryMobile && (
-				<div className="contTem">
-					<div className="titre">
+				<div className={classes.contTem}>
+					<div className={classes.titre}>
 						<h1>
 							Vos <span>Témoignages</span>
 						</h1>
 					</div>
-					<div className="image">
+					<div className={classes.image}>
 						<svg
 							preserveAspectRatio="xMidYMid meet"
 							data-bbox="16.5 63 167 74"
@@ -32,18 +33,18 @@ const VosTemoignages = (props) => {
 							</g>
 						</svg>
 					</div>
-					<div className="contTemoins">
-						<div className="comment">
-							<img src="" alt="avatar" />
+					<div className={classes.contTemoins}>
+						<div className={classes.comment}>
+							<img src={avatar} alt="avatar" />
 							<p>
 								I would like to discuss my landscaping options
 								for the front yard of my house. L live at 851
-								Des Grands Ducs in St-Bruno Larry Reichelson -
-								il y a un an -{" "}
+								Des Grands Ducs in St-Bruno <br />
+								<span>Larry Reichelson - il y a un an</span>
 							</p>
 						</div>
-						<div className="comment">
-							<img src="" alt="avatar" />
+						<div className={classes.comment}>
+							<img src={avatar} alt="avatar" />
 							<p>
 								Bonjour, En qualité d'administrateur de 4
 								syndicats de copropriétés dans le parcours du
@@ -61,8 +62,8 @@ const VosTemoignages = (props) => {
 								nous devions prendre. Encore une fois, en mon
 								nom persionnelle ainsi qu'au nom de
 								copropriétaires des Bellevue I, nos sincères
-								remerciements. Alain Bélisle Président Alain
-								Bélisle - il y a 2 ans -
+								remerciements. Alain Bélisle Président <br />
+								<span> Alain Bélisle - il y a 2 ans</span>
 							</p>
 						</div>
 					</div>

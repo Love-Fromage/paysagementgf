@@ -2,22 +2,55 @@
 @import "sass-rem";
 
 .contTem {
+	margin-top: 20px;
 	.titre {
+		text-align: left;
+		margin-left: 5vw;
 		h1 {
+			margin-bottom: 0;
 			span {
 				color: $vert-nav;
 			}
 		}
 	}
 	.image {
+		text-align: left;
+		margin-left: 5vw;
+		margin-top: 30px;
+		height: fit-content;
 		svg {
+			width: 30vw;
+			height: 50px;
 		}
 	}
 	.contTemoins {
+		width: 90vw;
+		border: 2px black solid;
+		border-radius: 25px;
+		padding: 30px;
+		margin-top: 20px;
+		margin-left: auto;
+		margin-right: auto;
 		.comment {
+			display: flex;
 			img {
+				// display: inline-block;
+				width: 50px;
+				height: 50px;
+				border-radius: 5px;
 			}
 			p {
+				margin: 10px;
+				margin-top: 0;
+				text-align: left;
+				font-weight: bold;
+				margin-left: 5vw;
+				width: 100%;
+				font-size: rem(13px);
+				line-height: 15px;
+				span {
+					opacity: 0.8;
+				}
 			}
 		}
 	}
