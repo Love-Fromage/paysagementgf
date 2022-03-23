@@ -40,10 +40,12 @@
 			}
 		}
 		img {
-			margin-top: -15px;
+			position: relative;
+			top: 16vh;
+			margin-top: auto;
 			z-index: 32;
 			max-width: 100%;
-			height: inherit;
+			// height: inherit;
 		}
 	}
 }
