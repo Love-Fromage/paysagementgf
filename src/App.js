@@ -8,6 +8,7 @@ import NosRealisation from "./components/NosRealisation";
 import VosTemoignages from "./components/VosTemoignages";
 import LeCarousel from "./components/LeCarousel";
 import "bootstrap/dist/css/bootstrap.min.css";
+import Formulaire from "./components/Formulaire";
 
 function App() {
 	const isTabletOrMobile = useMediaQuery({ query: "(max-width:1224px)" });
@@ -40,6 +41,10 @@ function App() {
 			/>
 
 			<VosTemoignages
+				queryMobile={isTabletOrMobile}
+				queryDesktop={isDesktopOrLaptop}
+			/>
+			<Formulaire
 				queryMobile={isTabletOrMobile}
 				queryDesktop={isDesktopOrLaptop}
 			/>

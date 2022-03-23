@@ -152,6 +152,7 @@ const LeCarousel = (props) => {
 					imgPrope={laPhoto}
 				/>
 			)}
+
 			<Swiper
 				spaceBetween={30}
 				slidesPerView={1.3}

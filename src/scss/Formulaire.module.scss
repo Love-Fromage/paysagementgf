@@ -1,0 +1,90 @@
+@import "./scss-variables";
+@import "sass-rem";
+
+.titeFeuille {
+	text-align: left;
+	margin-left: 5vw;
+	svg {
+		width: 28vw;
+		height: auto;
+	}
+}
+
+.contForm {
+	background-image: url("../images/formulaireBG.webp");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	height: 580px;
+	margin-bottom: 30px;
+	form {
+		display: flex;
+		flex-direction: column;
+		.contTitre {
+			margin-top: 30px;
+			h1 {
+				font-weight: bold;
+				color: #fff;
+			}
+		}
+		.contInputs {
+			display: flex;
+			flex-direction: column;
+			width: 80%;
+			// align-items: center;
+			margin-left: auto;
+			margin-right: auto;
+			background-color: rgba(255, 255, 255, 0.671);
+			padding-bottom: 50px;
+			input,
+			textarea {
+				margin-left: auto;
+				margin-right: auto;
+				border-radius: 0;
+				border: none;
+				margin-top: 5px;
+				margin-bottom: 5px;
+				width: 95%;
+			}
+			input {
+				height: 50px;
+				padding-left: 5vw;
+				font-style: italic;
+				font-weight: bold;
+				&::placeholder {
+					opacity: 1;
+					color: #000;
+				}
+			}
+			input:first-child {
+				margin-top: 10px;
+			}
+			textarea {
+				margin-bottom: 10px;
+				padding-left: 5vw;
+				resize: none;
+				height: 150px;
+				&::placeholder {
+					opacity: 1;
+					color: #000;
+					font-weight: bold;
+				}
+			}
+			.merci {
+			}
+			button {
+				width: 50%;
+				background-color: #fff;
+				height: 50px;
+				margin-left: auto;
+				margin-right: auto;
+				margin-top: 20px;
+				color: $rouge-nav;
+				font-weight: bold;
+				font-size: rem(24px);
+				border: none;
+				// box-shadow: 3px 3px black;
+			}
+		}
+	}
+}
