@@ -1,6 +1,133 @@
 @import "./scss-variables";
 
 @import "sass-rem";
+.heroD {
+	background-image: url("../images/bgHeroD.jpeg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	padding-top: 10vh;
+	padding-bottom: 10vh;
+
+	// background-clip: border-box;
+	background-position: center;
+	.contTextHeroD {
+		background-color: rgba(255, 255, 255, 0.65);
+		width: 20%;
+		margin-left: 60vw;
+		margin-right: auto;
+		margin-top: 5vh;
+		margin-bottom: auto;
+		.petitTitreD {
+			width: 90%;
+			margin-left: auto;
+			margin-right: auto;
+
+			margin: 0;
+			text-align: center;
+			font-weight: normal;
+			color: #fff;
+			font-size: rem(26px);
+			font-family: $dancing;
+			// font-style: normal;
+			margin-bottom: 0;
+			position: relative;
+			top: -10px;
+			left: 1vw;
+			font-weight: bold;
+			background-color: $rouge-nav;
+		}
+		.premierh1D {
+			font-family: $work;
+			font-weight: 700;
+			text-transform: uppercase;
+			margin-top: 20px;
+			font-size: rem(30px);
+			text-align: left;
+			margin-left: 2vw;
+		}
+		.deuxiemeh1D {
+			margin-left: 2vw;
+			text-align: left;
+			font-family: $work;
+			font-weight: 700;
+			font-size: rem(28px);
+			color: $rouge-nav;
+			span {
+				font-family: $dancing;
+				font-weight: 400;
+				font-size: rem(30px);
+			}
+		}
+		.quote1,
+		.quote2 {
+			width: fit-content;
+			display: flex;
+			// margin-right: 1"00vw;
+			// margin-left: 0;"
+
+			// flex-direction: column;
+			// justify-content: flex-start;
+			// align-items: center;
+			// margin: 0;
+			margin-top: 20px;
+			svg {
+				width: 3.5vw;
+				height: fit-content;
+				color: #000;
+			}
+		}
+		.quote1 {
+			// margin-top: 5px;
+			margin-right: auto;
+			margin-left: 2vw;
+		}
+		.quote2 {
+			margin-top: 0;
+			margin-right: 2vw;
+			margin-left: auto;
+			svg {
+				transform: rotate(180deg);
+			}
+		}
+		p {
+			font-family: $work;
+			font-weight: 700;
+			text-align: left;
+			margin-left: 2vw;
+			margin-bottom: 0;
+
+			&:nth-child(5) {
+				margin-top: 20px;
+				font-size: rem(24px);
+			}
+			&:nth-child(6) {
+				// margin-bottom: 5px;
+				font-size: rem(26px);
+			}
+			&:nth-child(7) {
+				font-size: rem(24px);
+				// margin-bottom: 5px;
+			}
+			&:nth-child(8) {
+				font-size: rem(28px);
+				// margin-bottom: 5px;
+			}
+		}
+		.demandeDevis {
+			background-color: #fff;
+			color: $rouge-nav;
+			position: relative;
+			width: 80%;
+			// text-align: center;
+			margin-left: auto;
+			margin-right: auto;
+			top: 10px;
+			font-weight: 700;
+			font-size: rem(20px);
+		}
+	}
+}
 .hero {
 	// background-color: rgb(32, 174, 187);
 	background-image: url("../images/3a257b_91e1e193ac8c498faec1618bd4585a0d_mv2.webp");
