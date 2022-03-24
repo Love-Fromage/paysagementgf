@@ -42,7 +42,7 @@ const Cartes = (props) => {
 			animation1.start({
 				x: "0vw",
 				transition: {
-					ease: "easeInOut",
+					ease: "easeOut",
 
 					duration: 1,
 				},
@@ -59,7 +59,7 @@ const Cartes = (props) => {
 			animation2.start({
 				x: "0vw",
 				transition: {
-					ease: "easeInOut",
+					ease: "easeOut",
 
 					duration: 1,
 				},
@@ -76,7 +76,7 @@ const Cartes = (props) => {
 			animation3.start({
 				x: "0vw",
 				transition: {
-					ease: "easeInOut",
+					ease: "easeOut",
 
 					duration: 1,
 				},
@@ -93,7 +93,7 @@ const Cartes = (props) => {
 			animation4.start({
 				x: "0vw",
 				transition: {
-					ease: "easeInOut",
+					ease: "easeOut",
 
 					duration: 1,
 				},
@@ -110,7 +110,7 @@ const Cartes = (props) => {
 			animation5.start({
 				x: "0vw",
 				transition: {
-					ease: "easeInOut",
+					ease: "easeOut",
 
 					duration: 1,
 				},
@@ -127,7 +127,7 @@ const Cartes = (props) => {
 			animation6.start({
 				x: "0vw",
 				transition: {
-					ease: "easeInOut",
+					ease: "easeOut",
 
 					duration: 1,
 				},

@@ -1,5 +1,74 @@
 @import "./scss-variables.scss";
 @import "sass-rem";
+.contNavD {
+	background-color: $rouge-nav;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	position: relative;
+	height: 10vh;
+	.logo {
+		margin-right: auto;
+		margin-left: 1vw;
+		margin-top: auto;
+		margin-bottom: auto;
+		svg {
+			margin-top: auto;
+			margin-bottom: auto;
+			width: 15vw;
+			height: 10vh;
+		}
+	}
+	.contNavGauche {
+		// margin-right: 2vw;
+		display: flex;
+		// justify-content: space-between;
+		align-items: center;
+		.contLinks {
+			display: flex;
+			align-items: center;
+			ul {
+				margin-bottom: auto;
+				margin-top: auto;
+				display: flex;
+				align-items: center;
+				list-style: none;
+				li {
+					cursor: pointer;
+					margin-left: 5vw;
+					font-family: $work;
+					font-weight: 700;
+					color: #fff;
+					font-size: rem(16px);
+					margin-top: auto;
+					margin-bottom: auto;
+				}
+			}
+		}
+	}
+	.contPhone {
+		margin-left: 2.5vw;
+		background-color: $vert-nav;
+		display: flex;
+		width: 10vw;
+		height: inherit;
+		align-items: center;
+		justify-content: center; //padding-top: 3.6vh;
+		//padding-bottom: 3.6vh;
+		//padding-left: 2vw;
+		//padding-right: 2vw;
+		a {
+			color: #fff;
+			font-family: $work;
+			font-weight: 700;
+			text-decoration: none;
+			font-size: rem(18px);
+			&:visited {
+				color: #fff;
+			}
+		}
+	}
+}
 .contNav {
 	background-color: #ed0213;
 	display: flex;
@@ -32,9 +101,6 @@
 		width: 20px;
 		margin-bottom: 5px;
 		height: 2px;
-	}
-	span:nth-child(2) {
-		// visibility: visible;
 	}
 
 	span:first-child {
