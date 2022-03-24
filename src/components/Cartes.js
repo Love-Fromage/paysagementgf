@@ -132,7 +132,7 @@ const Cartes = (props) => {
 					</div>
 					<div className={classes.carte}>
 						<div className={classes.contCaption}>
-							<p>Services architecte</p>
+							<p>Service architecte</p>
 						</div>
 					</div>
 					<div className={classes.carte}>
