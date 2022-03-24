@@ -1,10 +1,60 @@
-import React from "react";
+import React, { useEffect } from "react";
+import { useInView } from "react-intersection-observer";
 import classes from "../scss/Cartes.module.scss";
 
 import { useAnimation } from "framer-motion";
 import LeBouton from "./Lebouton";
 
 const Cartes = (props) => {
+	const [ref1, inView1] = useInView({
+		triggerOnce: true,
+	});
+	const [ref2, inView2] = useInView({
+		triggerOnce: true,
+	});
+	const [ref3, inView3] = useInView({
+		triggerOnce: true,
+	});
+	const [ref4, inView4] = useInView({
+		triggerOnce: true,
+	});
+	const [ref5, inView5] = useInView({
+		triggerOnce: true,
+	});
+	const [ref6, inView6] = useInView({
+		triggerOnce: true,
+	});
+	useEffect(() => {
+		if (inView1) {
+			console.log("inview1");
+		}
+	}, [inView1]);
+	useEffect(() => {
+		if (inView2) {
+			console.log("inview2");
+		}
+	}, [inView2]);
+	useEffect(() => {
+		if (inView3) {
+			console.log("inview3");
+		}
+	}, [inView3]);
+	useEffect(() => {
+		if (inView4) {
+			console.log("inview4");
+		}
+	}, [inView4]);
+	useEffect(() => {
+		if (inView5) {
+			console.log("inview5");
+		}
+	}, [inView5]);
+	useEffect(() => {
+		if (inView6) {
+			console.log("inview6");
+		}
+	}, [inView6]);
+
 	return (
 		<div>
 			{props.queryMobile && (
@@ -120,32 +170,32 @@ const Cartes = (props) => {
 							</g>
 						</svg>
 					</div>
-					<div className={classes.carte}>
+					<div ref={ref1} className={classes.carte}>
 						<div className={classes.contCaption}>
 							<p>Pavés unis + Protection</p>
 						</div>
 					</div>
-					<div className={classes.carte}>
+					<div ref={ref2} className={classes.carte}>
 						<div className={classes.contCaption}>
 							<p>Pierres naturelles</p>
 						</div>
 					</div>
-					<div className={classes.carte}>
+					<div ref={ref3} className={classes.carte}>
 						<div className={classes.contCaption}>
 							<p>Service architecte</p>
 						</div>
 					</div>
-					<div className={classes.carte}>
+					<div ref={ref4} className={classes.carte}>
 						<div className={classes.contCaption}>
 							<p>Aménagement de terrains</p>
 						</div>
 					</div>
-					<div className={classes.carte}>
+					<div ref={ref5} className={classes.carte}>
 						<div className={classes.contCaption}>
 							<p>Coupes de gazons et végétaux</p>
 						</div>
 					</div>
-					<div className={classes.carte}>
+					<div ref={ref6} className={classes.carte}>
 						<div className={classes.contCaption}>
 							<p>Toutes réparations</p>
 						</div>
