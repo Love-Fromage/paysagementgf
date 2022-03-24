@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import { useInView } from "react-intersection-observer";
+import { Link as Scroller } from "react-scroll";
 import classes from "../scss/NosRealisation.module.scss";
 import titFleche from "../images/442b843ace074e788d2c78bffd4e3586.webp";
 
@@ -20,7 +21,9 @@ const NosRealisation = (props) => {
 						conception à la réalisation de votre vision.
 					</p>
 					<div className={classes.contCTA}>
-						<p>Devis gratuit </p>{" "}
+						<Scroller to="devis">
+							<p>Devis gratuit </p>
+						</Scroller>{" "}
 						<img src={titFleche} alt="fleche-cta" />
 					</div>
 				</div>

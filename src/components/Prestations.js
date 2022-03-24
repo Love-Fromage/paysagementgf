@@ -1,5 +1,5 @@
 import React from "react";
-// import { useMediaQuery } from "react-responsive";
+import { Link as Scroller } from "react-scroll";
 import classes from "../scss/Prestations.module.scss";
 import titFleche from "../images/442b843ace074e788d2c78bffd4e3586.webp";
 const Prestations = (props) => {
@@ -46,7 +46,9 @@ const Prestations = (props) => {
 						</p>
 					</div>
 					<div className={classes.contCTA}>
-						<p>Devis gratuit </p>{" "}
+						<Scroller to="devis">
+							<p>Devis gratuit </p>
+						</Scroller>{" "}
 						<img src={titFleche} alt="fleche-cta" />
 					</div>
 				</div>

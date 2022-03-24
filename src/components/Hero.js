@@ -1,5 +1,5 @@
 import React from "react";
-// import { useMediaQuery } from "react-responsive";
+import { Link as Scroller } from "react-scroll";
 import classes from "../scss/Hero.module.scss";
 
 const Hero = (props) => {
@@ -83,7 +83,11 @@ const Hero = (props) => {
 							</div>
 						</div>
 						<div className={classes.demandeDevis}>
-							<p>Demandez un devis</p>
+							<p>
+								<Scroller to="devis">
+									Demandez un devis
+								</Scroller>
+							</p>
 						</div>
 					</div>
 				</div>

@@ -1,5 +1,5 @@
 import "./App.css";
-import React, { useRef, useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useInView } from "react-intersection-observer";
 import Header from "./components/Header";
 import { useMediaQuery } from "react-responsive";
@@ -18,7 +18,7 @@ function App() {
 	const isTabletOrMobile = useMediaQuery({ query: "(max-width:1224px)" });
 	const isDesktopOrLaptop = useMediaQuery({ query: "(min-width:1224px)" });
 	const [toggleButton, setToggleButton] = useState(false);
-	const { ref, inView } = useInView();
+	const { ref, inView } = useInView({});
 
 	useEffect(() => {
 		// console.log("inView: " + inView);
@@ -49,6 +49,7 @@ function App() {
 					queryMobile={isTabletOrMobile}
 					queryDesktop={isDesktopOrLaptop}
 				/>
+
 				<NosRealisation
 					queryMobile={isTabletOrMobile}
 					queryDesktop={isDesktopOrLaptop}
