@@ -5,7 +5,9 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	position: relative;
+	position: fixed;
+	width: 100vw;
+	z-index: 55;
 	height: 10vh;
 	.logo {
 		margin-right: auto;
