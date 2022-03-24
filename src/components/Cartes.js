@@ -2,56 +2,140 @@ import React, { useEffect } from "react";
 import { useInView } from "react-intersection-observer";
 import classes from "../scss/Cartes.module.scss";
 
-import { useAnimation } from "framer-motion";
+import { useAnimation, motion } from "framer-motion";
 import LeBouton from "./Lebouton";
 
 const Cartes = (props) => {
+	const animation1 = useAnimation();
+	const animation2 = useAnimation();
+	const animation3 = useAnimation();
+	const animation4 = useAnimation();
+	const animation5 = useAnimation();
+	const animation6 = useAnimation();
 	const [ref1, inView1] = useInView({
 		triggerOnce: true,
+		threshold: 0.5,
 	});
 	const [ref2, inView2] = useInView({
 		triggerOnce: true,
+		threshold: 0.5,
 	});
 	const [ref3, inView3] = useInView({
 		triggerOnce: true,
+		threshold: 0.5,
 	});
 	const [ref4, inView4] = useInView({
 		triggerOnce: true,
+		threshold: 0.5,
 	});
 	const [ref5, inView5] = useInView({
 		triggerOnce: true,
+		threshold: 0.5,
 	});
 	const [ref6, inView6] = useInView({
 		triggerOnce: true,
+		threshold: 0.5,
 	});
 	useEffect(() => {
 		if (inView1) {
 			console.log("inview1");
+			animation1.start({
+				x: "0vw",
+				transition: {
+					ease: "easeInOut",
+
+					duration: 1,
+				},
+			});
+		} else {
+			animation1.start({
+				x: "100vw",
+			});
 		}
 	}, [inView1]);
 	useEffect(() => {
 		if (inView2) {
 			console.log("inview2");
+			animation2.start({
+				x: "0vw",
+				transition: {
+					ease: "easeInOut",
+
+					duration: 1,
+				},
+			});
+		} else {
+			animation2.start({
+				x: "100vw",
+			});
 		}
 	}, [inView2]);
 	useEffect(() => {
 		if (inView3) {
 			console.log("inview3");
+			animation3.start({
+				x: "0vw",
+				transition: {
+					ease: "easeInOut",
+
+					duration: 1,
+				},
+			});
+		} else {
+			animation3.start({
+				x: "100vw",
+			});
 		}
 	}, [inView3]);
 	useEffect(() => {
 		if (inView4) {
 			console.log("inview4");
+			animation4.start({
+				x: "0vw",
+				transition: {
+					ease: "easeInOut",
+
+					duration: 1,
+				},
+			});
+		} else {
+			animation4.start({
+				x: "100vw",
+			});
 		}
 	}, [inView4]);
 	useEffect(() => {
 		if (inView5) {
 			console.log("inview5");
+			animation5.start({
+				x: "0vw",
+				transition: {
+					ease: "easeInOut",
+
+					duration: 1,
+				},
+			});
+		} else {
+			animation5.start({
+				x: "100vw",
+			});
 		}
 	}, [inView5]);
 	useEffect(() => {
 		if (inView6) {
 			console.log("inview6");
+			animation6.start({
+				x: "0vw",
+				transition: {
+					ease: "easeInOut",
+
+					duration: 1,
+				},
+			});
+		} else {
+			animation6.start({
+				x: "100vw",
+			});
 		}
 	}, [inView6]);
 
@@ -171,34 +255,52 @@ const Cartes = (props) => {
 						</svg>
 					</div>
 					<div ref={ref1} className={classes.carte}>
-						<div className={classes.contCaption}>
+						<motion.div
+							animate={animation1}
+							className={classes.contCaption}
+						>
 							<p>Pavés unis + Protection</p>
-						</div>
+						</motion.div>
 					</div>
 					<div ref={ref2} className={classes.carte}>
-						<div className={classes.contCaption}>
+						<motion.div
+							animate={animation2}
+							className={classes.contCaption}
+						>
 							<p>Pierres naturelles</p>
-						</div>
+						</motion.div>
 					</div>
 					<div ref={ref3} className={classes.carte}>
-						<div className={classes.contCaption}>
+						<motion.div
+							animate={animation3}
+							className={classes.contCaption}
+						>
 							<p>Service architecte</p>
-						</div>
+						</motion.div>
 					</div>
 					<div ref={ref4} className={classes.carte}>
-						<div className={classes.contCaption}>
+						<motion.div
+							animate={animation4}
+							className={classes.contCaption}
+						>
 							<p>Aménagement de terrains</p>
-						</div>
+						</motion.div>
 					</div>
 					<div ref={ref5} className={classes.carte}>
-						<div className={classes.contCaption}>
+						<motion.div
+							animate={animation5}
+							className={classes.contCaption}
+						>
 							<p>Coupes de gazons et végétaux</p>
-						</div>
+						</motion.div>
 					</div>
 					<div ref={ref6} className={classes.carte}>
-						<div className={classes.contCaption}>
+						<motion.div
+							animate={animation6}
+							className={classes.contCaption}
+						>
 							<p>Toutes réparations</p>
-						</div>
+						</motion.div>
 					</div>
 				</div>
 			)}
