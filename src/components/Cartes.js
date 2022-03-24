@@ -1,12 +1,8 @@
 import React from "react";
 import classes from "../scss/Cartes.module.scss";
-// import carte1 from "../images/3a257b_9e35458ead224f5e920d32be44af3c78_mv2.webp";
-// import carte2 from "../images/3a257b_9659b4cf95024e98ac2df4c0237e9c17_mv2.webp";
-// import carte3 from "../images/3a257b_54b1b8363e854bfe9729ca337ceb6613_mv2.webp";
-// import carte4 from "../images/3a257b_421562afeab54d269cb181715468cd4f_mv2.webp";
-// import carte5 from "../images/3a257b_fe6ca7dab52e41ee84d5f3e33c05e4e8_mv2.webp";
-// import carte6 from "../images/3a257b_fbdca02129c24148af89e4b2af599093_mv2.webp";
-// import carte7 from "../images/3a257b_9e35458ead224f5e920d32be44af3c78_mv2.webp";
+
+import { useAnimation } from "framer-motion";
+import LeBouton from "./Lebouton";
 
 const Cartes = (props) => {
 	return (

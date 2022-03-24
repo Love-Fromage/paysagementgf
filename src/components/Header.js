@@ -456,11 +456,32 @@ const Header = (props) => {
 					className={toggleMenu ? classes.openNav : classes.closeNav}
 				>
 					<ul>
-						<li>Prestations</li>
+						<li>
+							<Scroller
+								to="prestations"
+								onClick={() => setToggleMenu(false)}
+							>
+								Prestations
+							</Scroller>
+						</li>
 						<li className={classes.ligne}></li>
-						<li>Réalisation</li>
+						<li>
+							<Scroller
+								to="realisations"
+								onClick={() => setToggleMenu(false)}
+							>
+								Réalisation
+							</Scroller>
+						</li>
 						<li className={classes.ligne}></li>
-						<li>Devis & contact</li>
+						<li>
+							<Scroller
+								to="devis"
+								onClick={() => setToggleMenu(false)}
+							>
+								Devis & contact
+							</Scroller>
+						</li>
 					</ul>
 				</nav>
 			)}

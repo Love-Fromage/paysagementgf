@@ -6,7 +6,7 @@ const Prestations = (props) => {
 	// const isTabletOrMobile = useMediaQuery({ query: "(max-width: 1224px)" });
 
 	return (
-		<div>
+		<div id="prestations">
 			{props.queryMobile && (
 				<div className={classes.contPrestation}>
 					<div className={classes.titre}>
