@@ -1,4 +1,5 @@
 @import "./scss-variables.scss";
+@import "sass-rem";
 .contNav {
 	background-color: #ed0213;
 	display: flex;
@@ -86,8 +87,13 @@ nav {
 			margin-right: 15px;
 			margin-left: auto;
 			padding: 5px;
+			margin-bottom: 5px;
 			width: fit-content;
 			text-align: right;
+			font-family: $barlow;
+			letter-spacing: 0.05em;
+			font-size: rem(22px);
+			font-weight: 200;
 		}
 		.ligne {
 			padding: 0;
