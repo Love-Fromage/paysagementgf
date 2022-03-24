@@ -11,7 +11,8 @@ const Prestations = (props) => {
 				<div className={classes.contPrestation}>
 					<div className={classes.titre}>
 						<h1>
-							<span>Nos </span>Prestations
+							<span>Nos </span>
+							<span>P</span>restations
 						</h1>
 						<div className={classes.contImgTitle}>
 							<svg

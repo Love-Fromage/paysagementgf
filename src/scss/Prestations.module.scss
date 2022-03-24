@@ -8,6 +8,7 @@
 	margin-left: auto;
 	margin-right: auto;
 	width: 90vw;
+	margin-top: 50px;
 
 	.titre {
 		display: flex;
@@ -15,15 +16,22 @@
 		position: relative;
 		height: fit-content;
 		align-items: center;
+		// margin-bottom: 0;
 		h1 {
 			// display: flex;
 			width: 100%;
 			margin-bottom: 0;
-			font-size: rem(35px);
+			font-size: rem(28px);
 			text-align: left;
 			margin-bottom: 50px;
+			font-family: $work;
+			font-weight: 500;
 			span {
-				font-size: rem(30px);
+				font-size: rem(26px);
+				&:last-child {
+					font-size: rem(34px);
+					font-weight: 700;
+				}
 			}
 		}
 	}
@@ -31,7 +39,7 @@
 	.contImgTitle {
 		position: absolute;
 		margin-top: 0;
-		top: 40px;
+		top: 10px;
 		left: 60vw;
 		// width: 100%;
 		svg {
@@ -40,13 +48,13 @@
 		}
 	}
 	.contText {
-		margin-top: 50px;
+		margin-top: 20px;
 		p {
 			text-align: justify;
-			font-size: rem(24px);
-			font-weight: light;
+			font-size: rem(22px);
+			font-weight: 300;
 			margin-bottom: 0;
-			// font-family: ;
+			font-family: $work;
 		}
 	}
 	.contCTA {
@@ -56,9 +64,10 @@
 		margin-top: 20px;
 		p {
 			color: $rouge-nav;
-			font-weight: normal;
-			font-size: rem(24px);
+			font-weight: 600;
+			font-size: rem(22px);
 			margin-top: 0;
+			font-family: $work;
 		}
 		img {
 			margin-left: 15px;

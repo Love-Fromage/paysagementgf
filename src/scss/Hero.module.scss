@@ -1,4 +1,5 @@
 @import "./scss-variables";
+
 @import "sass-rem";
 .hero {
 	// background-color: rgb(32, 174, 187);
@@ -49,23 +50,30 @@
 				text-align: center;
 				font-weight: normal;
 				color: #fff;
-				font-size: rem(23px);
+				font-size: rem(26px);
+				font-family: $dancing;
+				// font-style: normal;
 				margin-bottom: 0;
 			}
 			position: relative;
 			top: -10px;
+			font-weight: bold;
 			background-color: $rouge-nav;
-			font-style: italic;
+			// font-style: italic;
 		}
 		.cont2eTitre {
 			h1 {
 				text-transform: uppercase;
 				span {
 					color: $rouge-nav;
+					font-family: $work;
+					font-weight: 500;
 					&:last-child {
 						text-transform: none;
-						font-weight: normal;
-						font-style: italic;
+						font-weight: 400;
+						// font-style: italic;
+						font-family: $dancing;
+						font-size: rem(30px);
 					}
 				}
 			}

@@ -9,7 +9,10 @@ const VosTemoignages = (props) => {
 				<div className={classes.contTem}>
 					<div className={classes.titre}>
 						<h1>
-							Vos <span>Témoignages</span>
+							<span>Vos</span>{" "}
+							<span>
+								<span>T</span>émoignages
+							</span>
 						</h1>
 					</div>
 					<div className={classes.image}>

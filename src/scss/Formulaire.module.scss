@@ -23,7 +23,9 @@
 		.contTitre {
 			margin-top: 30px;
 			h1 {
-				font-weight: bold;
+				font-weight: 600;
+				letter-spacing: 0.05em;
+				font-family: $work;
 				color: #fff;
 			}
 		}
@@ -91,6 +93,7 @@
 				font-weight: bold;
 				font-size: rem(24px);
 				border: none;
+				font-family: $work;
 				// box-shadow: 3px 3px black;
 			}
 		}

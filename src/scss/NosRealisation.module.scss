@@ -3,15 +3,17 @@
 
 .contNosReas {
 	margin-top: -15vh;
-	width: 70vw;
+	width: 85vw;
 	margin-left: auto;
 	margin-right: auto;
 	.titre {
 		text-align: left;
+		// margin-left: 2vw;
 		h1 {
 			font-weight: bold;
 			font-size: rem(24px);
 			letter-spacing: 0.05em;
+			text-align: left;
 			span {
 				font-size: rem(36px);
 				color: $vert-nav;
@@ -25,6 +27,9 @@
 	.petiteDesc {
 		letter-spacing: 0.05em;
 		text-align: justify;
+		font-family: $work;
+		font-weight: 300;
+		font-size: rem(20px);
 	}
 
 	.contCTA {
@@ -34,9 +39,10 @@
 		margin-top: 20px;
 		p {
 			color: $vert-nav;
-			font-weight: normal;
+			font-weight: 600;
 			font-size: rem(24px);
 			margin-top: 0;
+			font-family: $work;
 		}
 		img {
 			margin-left: 15px;

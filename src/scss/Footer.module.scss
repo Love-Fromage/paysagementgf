@@ -8,7 +8,9 @@
 		.adresse {
 			padding-top: 30px;
 			p {
-				font-weight: normal;
+				font-weight: 200;
+				font-size: rem(20px);
+				font-family: $work;
 			}
 		}
 		.email {
@@ -17,8 +19,14 @@
 			padding-bottom: 25px;
 			p {
 				margin-bottom: 0;
+				font-family: $work;
+				font-weight: 300;
+				font-size: rem(20px);
 			}
 			a {
+				font-family: $work;
+				font-weight: 300;
+				font-size: rem(20px);
 				text-decoration: none;
 				color: #fff;
 				&:visited {
@@ -29,6 +37,7 @@
 			a:first-child {
 			}
 			a:last-child {
+				margin-top: 20px;
 				img {
 					width: 40px;
 				}
@@ -43,7 +52,9 @@
 				text-align: left;
 				margin-left: 5vw;
 				padding-top: 20px;
-				font-weight: bold;
+				font-size: rem(23px);
+				font-weight: 700;
+				font-family: $work;
 				text-transform: uppercase;
 			}
 			a {
@@ -52,7 +63,10 @@
 				text-align: left;
 				margin-left: 5vw;
 				margin-right: auto;
-				font-weight: lighter;
+				font-weight: 300;
+				// line-height: 15px;
+				// text-decoration: underline;
+				font-family: $work;
 				&:visited {
 					color: #fff;
 				}
