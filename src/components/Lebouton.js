@@ -1,17 +1,17 @@
-import React from "react";
+import React, { useState } from "react";
 import classes from "../scss/Lebouton.module.scss";
 import { GrNext } from "react-icons/gr";
 
-const LeBouton = () => {
+const LeBouton = (props) => {
 	return (
 		<div
 			style={{
 				position: "fixed",
-				bottom: "10vh",
+				bottom: "5vh",
 				right: "10vw",
 				zIndex: 55,
-				width: "75px",
-				height: "75px",
+				width: "40px",
+				height: "40px",
 				backgroundColor: "white",
 				color: "black",
 				border: "1px solid black",
@@ -25,10 +25,10 @@ const LeBouton = () => {
 				fontSize: "35px",
 				fontWeight: "bold",
 			}}
-			className={classes.appear}
+			className={props.state ? classes.appear : classes.disappear}
 			onClick={() => window.scrollTo(0, 0)}
 		>
-			<GrNext />
+			<GrNext size="20px" />
 		</div>
 	);
 };

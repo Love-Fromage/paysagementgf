@@ -21,7 +21,7 @@ function App() {
 	const { ref, inView } = useInView();
 
 	useEffect(() => {
-		console.log("inView: " + inView);
+		// console.log("inView: " + inView);
 		if (inView) {
 			setToggleButton(true);
 		} else {
@@ -43,7 +43,7 @@ function App() {
 				queryMobile={isTabletOrMobile}
 				queryDesktop={isDesktopOrLaptop}
 			/>
-			{toggleButton && <LeBouton />}
+			<LeBouton state={toggleButton} />
 			<div ref={ref}>
 				<Cartes
 					queryMobile={isTabletOrMobile}
