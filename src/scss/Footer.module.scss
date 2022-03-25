@@ -1,5 +1,68 @@
 @import "./scss-variables";
 @import "sass-rem";
+.contFooterD {
+	color: #fff;
+	display: flex;
+	flex-direction: row-reverse;
+	width: 100vw;
+	height: 25vh;
+	font-family: $work;
+	.footerVert {
+		background-color: $vert-nav;
+		display: flex;
+		flex-direction: row-reverse;
+		align-items: center;
+		width: 50%;
+		padding-left: 2vw;
+		a {
+			img {
+				width: 2vw;
+				margin-left: 2vw;
+				margin-right: 2vw;
+				// margin-bottom: auto;
+				// margin-top: 0;
+			}
+		}
+		.adresse {
+			margin-left: 5vw;
+			text-align: left;
+			// display: flex;
+		}
+		.email {
+			text-align: left;
+			a {
+				text-decoration: none;
+				color: #fff;
+			}
+		}
+	}
+	.footerRouge {
+		display: flex;
+		background-color: $rouge-nav;
+		flex-direction: row;
+		width: 50%;
+		justify-content: flex-start;
+		padding-left: 5vw;
+		align-items: center;
+		text-align: left;
+		.titre {
+			display: flex;
+			h1 {
+				text-transform: uppercase;
+				font-size: rem(24px);
+				font-weight: 700;
+				margin-right: 2vw;
+				width: fit-content;
+			}
+			a {
+				color: #fff;
+				&:visited {
+					color: #fff;
+				}
+			}
+		}
+	}
+}
 
 .contFooter {
 	color: #fff;
