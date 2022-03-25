@@ -12,23 +12,31 @@
 
 .contForm {
 	background-image: url("../images/formulaireBG.webp");
+	@media screen and(min-width:1224px) {
+		background-image: url("../images/bgForm.webp");
+		height: 700px;
+	}
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
+	background-attachment: fixed;
 	height: 580px;
 	margin-bottom: 30px;
 	form {
 		display: flex;
 		flex-direction: column;
 		.contTitre {
-			margin-top: 30px;
+			margin-top: 130px;
+
 			h1 {
 				font-weight: 600;
 				letter-spacing: 0.05em;
 				font-family: $work;
+				font-size: rem(28px);
 				color: #fff;
 			}
 		}
+
 		.contInputs {
 			display: flex;
 			flex-direction: column;
@@ -46,6 +54,9 @@
 				border: none;
 				margin-top: 5px;
 				margin-bottom: 5px;
+				@media screen and(min-width:1224px) {
+					margin-bottom: 25px;
+				}
 				width: 95%;
 			}
 			input {
@@ -94,7 +105,31 @@
 				font-size: rem(24px);
 				border: none;
 				font-family: $work;
+				@media screen and(min-width:1224px) {
+					width: 20%;
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					img {
+						margin-top: 5px;
+						// margin-bottom: auto;
+						margin-left: 20px;
+						width: 15%;
+					}
+				}
 				// box-shadow: 3px 3px black;
+			}
+		}
+		.contInput2 {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			input {
+				// padding: 0;
+				width: 45%;
+			}
+			.email {
+				margin-top: 10px;
 			}
 		}
 	}
