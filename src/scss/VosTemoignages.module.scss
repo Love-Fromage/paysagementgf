@@ -78,3 +78,53 @@
 		}
 	}
 }
+.feuilleD {
+	position: relative;
+	top: 100px;
+	left: 75%;
+	// right: 5vw;
+	width: 20vw;
+	svg {
+		width: 15vw;
+		height: auto;
+	}
+}
+
+.contTemD {
+	.titreD {
+		text-align: left;
+		margin-left: 20vw;
+		span {
+			&:nth-child(1) {
+				// color: red;
+				color: black;
+				font-size: rem(28px);
+			}
+			&:nth-child(2) {
+				span {
+					color: $vert-nav;
+					font-family: $work;
+					font-weight: 600;
+					font-size: rem(32px);
+				}
+			}
+			&:nth-child(2) {
+				font-size: rem(28px);
+				font-weight: 600;
+			}
+
+			color: $vert-nav;
+		}
+	}
+	.image {
+		position: relative;
+		// top: 350px;
+		svg {
+			width: 15vw;
+			height: auto;
+		}
+	}
+	.contTemoinsD {
+		width: 50vw;
+	}
+}

@@ -7,9 +7,18 @@ const Modalle = (props) => {
 	};
 	console.log(props.imgPrope);
 	return (
-		<div className={classes.modalBackground} style={modalStyles}>
+		<div
+			className={classes.modalBackground}
+			style={modalStyles}
+			// onClick={props.closeModalle}
+		>
 			<div className={classes.modalContainer}>
-				<div onClick={props.closeModalle}>
+				<div
+					onClick={props.closeModalle}
+					style={{
+						cursor: "pointer",
+					}}
+				>
 					<span></span>
 					<span></span>
 				</div>
