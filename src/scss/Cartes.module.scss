@@ -15,6 +15,7 @@
 	.carteD {
 		// width: 33%;
 		height: 40vh;
+		overflow: hidden;
 		// margin-bottom: 20px;
 		&:nth-child(1) {
 			background-image: url("../images/carte1.webp");

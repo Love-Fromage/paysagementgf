@@ -7,6 +7,7 @@ const LeBouton = (props) => {
 		<div
 			style={{
 				position: "fixed",
+				cursor: "pointer",
 				bottom: "5vh",
 				right: "10vw",
 				zIndex: 55,

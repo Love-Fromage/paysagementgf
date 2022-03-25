@@ -49,7 +49,7 @@ const Cartes = (props) => {
 			});
 		} else {
 			animation1.start({
-				x: "100vw",
+				x: "100%",
 			});
 		}
 	}, [inView1]);
@@ -66,7 +66,7 @@ const Cartes = (props) => {
 			});
 		} else {
 			animation2.start({
-				x: "100vw",
+				x: "100%",
 			});
 		}
 	}, [inView2]);
@@ -83,7 +83,7 @@ const Cartes = (props) => {
 			});
 		} else {
 			animation3.start({
-				x: "100vw",
+				x: "100%",
 			});
 		}
 	}, [inView3]);
@@ -100,7 +100,7 @@ const Cartes = (props) => {
 			});
 		} else {
 			animation4.start({
-				x: "100vw",
+				x: "100%",
 			});
 		}
 	}, [inView4]);
@@ -117,7 +117,7 @@ const Cartes = (props) => {
 			});
 		} else {
 			animation5.start({
-				x: "100vw",
+				x: "100%",
 			});
 		}
 	}, [inView5]);
@@ -134,7 +134,7 @@ const Cartes = (props) => {
 			});
 		} else {
 			animation6.start({
-				x: "100vw",
+				x: "100%",
 			});
 		}
 	}, [inView6]);
@@ -306,35 +306,53 @@ const Cartes = (props) => {
 			)}
 			{props.queryDesktop && (
 				<div className={classes.contCartesD}>
-					<div className={classes.carteD}>
-						<div className={classes.carteCaption}>
+					<div ref={ref1} className={classes.carteD}>
+						<motion.div
+							animate={animation1}
+							className={classes.carteCaption}
+						>
 							<p>Pavés unis + Protection</p>
-						</div>
+						</motion.div>
 					</div>
-					<div className={classes.carteD}>
-						<div className={classes.carteCaption}>
+					<div ref={ref2} className={classes.carteD}>
+						<motion.div
+							animate={animation2}
+							className={classes.carteCaption}
+						>
 							<p>Pierres naturelles</p>
-						</div>
+						</motion.div>
 					</div>
-					<div className={classes.carteD}>
-						<div className={classes.carteCaption}>
+					<div ref={ref3} className={classes.carteD}>
+						<motion.div
+							animate={animation3}
+							className={classes.carteCaption}
+						>
 							<p>Service architecte</p>
-						</div>
+						</motion.div>
 					</div>
-					<div className={classes.carteD}>
-						<div className={classes.carteCaption}>
+					<div ref={ref4} className={classes.carteD}>
+						<motion.div
+							animate={animation4}
+							className={classes.carteCaption}
+						>
 							<p>Aménagement de terrains</p>
-						</div>
+						</motion.div>
 					</div>
-					<div className={classes.carteD}>
-						<div className={classes.carteCaption}>
+					<div ref={ref5} className={classes.carteD}>
+						<motion.div
+							animate={animation5}
+							className={classes.carteCaption}
+						>
 							<p>Coupes de gazons et végétaux</p>
-						</div>
+						</motion.div>
 					</div>
-					<div className={classes.carteD}>
-						<div className={classes.carteCaption}>
+					<div ref={ref6} className={classes.carteD}>
+						<motion.div
+							animate={animation6}
+							className={classes.carteCaption}
+						>
 							<p>Toutes réparations</p>
-						</div>
+						</motion.div>
 					</div>
 				</div>
 			)}
