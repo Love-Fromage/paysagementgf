@@ -31,6 +31,25 @@
 		font-weight: 300;
 		font-size: rem(20px);
 	}
+	.contCTAD {
+		display: flex;
+		justify-content: flex-end;
+		align-items: center;
+		margin-top: 20px;
+		p {
+			color: $vert-nav;
+			font-weight: 600;
+			font-size: rem(24px);
+			margin-top: 0;
+			font-family: $work;
+		}
+		img {
+			margin-left: 15px;
+			width: 5%;
+			// margin-top: 22px;
+			margin-bottom: auto;
+		}
+	}
 
 	.contCTA {
 		display: flex;
@@ -49,6 +68,34 @@
 			width: 15%;
 			// margin-top: 22px;
 			margin-bottom: auto;
+		}
+	}
+}
+.contNosReasD {
+	width: 60vw;
+	// display: flex;
+	margin-top: 20px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 150px;
+	svg {
+		position: relative;
+		width: 10vw;
+		left: -40vw;
+		top: 150px;
+		// right: 100%;
+		height: fit-content;
+	}
+	.titre {
+		display: flex;
+		align-items: center;
+		margin-bottom: 50px;
+		p {
+			// margin-top: auto;
+			margin-left: 5vw;
+			font-family: $dancing;
+			font-size: rem(28px);
+			font-weight: bold;
 		}
 	}
 }
