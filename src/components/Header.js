@@ -452,7 +452,13 @@ const Header = (props) => {
 			)}
 			{props.queryDesktop && (
 				<div className={classes.contNavD}>
-					<div className={classes.logo}>
+					<div
+						className={classes.logo}
+						onClick={() => window.scrollTo(0, 0)}
+						style={{
+							cursor: "pointer",
+						}}
+					>
 						<svg
 							preserveAspectRatio="xMidYMid meet"
 							data-bbox="53.38 53.82 1081.62 311.859"
@@ -859,7 +865,7 @@ const Header = (props) => {
 						<div className={classes.contLinks}>
 							<ul>
 								<li>
-									<Scroller to="prestation">
+									<Scroller to="prestations2">
 										Prestations
 									</Scroller>
 								</li>

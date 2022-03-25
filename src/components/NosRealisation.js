@@ -1,8 +1,10 @@
+/** @jsxImportSource @emotion/react */
 import React, { useEffect } from "react";
 import { useInView } from "react-intersection-observer";
 import { Link as Scroller } from "react-scroll";
 import classes from "../scss/NosRealisation.module.scss";
 import titFleche from "../images/442b843ace074e788d2c78bffd4e3586.webp";
+import { css, jsx } from "@emotion/react";
 
 const NosRealisation = (props) => {
 	return (
@@ -157,7 +159,12 @@ const NosRealisation = (props) => {
 						avec un service clé en main hors pair allant de la
 						conception à la réalisation de votre vision.
 					</p>
-					<div className={classes.contCTAD}>
+					<div
+						className={classes.contCTAD}
+						css={css`
+							cursor: pointer;
+						`}
+					>
 						<Scroller to="devis">
 							<p>Devis gratuit </p>
 						</Scroller>{" "}
