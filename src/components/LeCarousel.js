@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import classes from "../scss/Carousel.module.scss";
 import Carousel from "react-bootstrap/Carousel";
-import photo from "../images/3a257b_421562afeab54d269cb181715468cd4f_mv2.webp";
+
 import image1 from "../images/carou1.webp";
 import image2 from "../images/carou2.webp";
 import image3 from "../images/carou3.webp";

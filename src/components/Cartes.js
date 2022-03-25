@@ -304,6 +304,40 @@ const Cartes = (props) => {
 					</div>
 				</div>
 			)}
+			{props.queryDesktop && (
+				<div className={classes.contCartesD}>
+					<div className={classes.carteD}>
+						<div className={classes.carteCaption}>
+							<p>Pavés unis + Protection</p>
+						</div>
+					</div>
+					<div className={classes.carteD}>
+						<div className={classes.carteCaption}>
+							<p>Pierres naturelles</p>
+						</div>
+					</div>
+					<div className={classes.carteD}>
+						<div className={classes.carteCaption}>
+							<p>Service architecte</p>
+						</div>
+					</div>
+					<div className={classes.carteD}>
+						<div className={classes.carteCaption}>
+							<p>Aménagement de terrains</p>
+						</div>
+					</div>
+					<div className={classes.carteD}>
+						<div className={classes.carteCaption}>
+							<p>Coupes de gazons et végétaux</p>
+						</div>
+					</div>
+					<div className={classes.carteD}>
+						<div className={classes.carteCaption}>
+							<p>Toutes réparations</p>
+						</div>
+					</div>
+				</div>
+			)}
 		</div>
 	);
 };
