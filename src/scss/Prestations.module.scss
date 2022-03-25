@@ -1,6 +1,87 @@
 @import "./scss-variables";
 @import "sass-rem";
 
+.contPrestD {
+	margin-top: 150px;
+	width: 70vw;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+	.lafeuille {
+		position: absolute;
+		left: 40vw;
+		top: -200px;
+		svg {
+			width: 15vw;
+			height: auto;
+		}
+	}
+	.contTitreD {
+		text-align: left;
+		span {
+			// letter-spacing: 0.05em;
+			font-family: $work;
+			&:nth-child(1) {
+				font-size: rem(30px);
+				color: black;
+				font-weight: 600;
+				margin-left: 7vw;
+			}
+			&:nth-child(2) {
+				font-size: rem(45px);
+				font-weight: 600;
+				color: $rouge-nav;
+			}
+			&:nth-child(3) {
+				font-size: rem(30px);
+				color: $rouge-nav;
+				font-weight: 600;
+			}
+		}
+	}
+	.contParaD {
+		margin-top: 30px;
+		margin-left: auto;
+		margin-right: auto;
+		width: 105ch;
+		text-align: left;
+		p {
+			font-family: $work;
+			font-weight: 300;
+			font-size: rem(20px);
+			line-height: 30px;
+		}
+	}
+	.contLeBas {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		svg {
+			margin-top: -50px;
+		}
+		.contCTA {
+			display: flex;
+			justify-content: flex-end;
+			align-items: center;
+			margin-right: 15vw;
+			margin-top: -150px;
+			p {
+				color: $rouge-nav;
+				font-weight: 600;
+				font-size: rem(22px);
+				margin-top: 0;
+				font-family: $work;
+			}
+			img {
+				margin-left: 15px;
+
+				width: 20%;
+				// margin-top: auto;
+				margin-bottom: auto;
+			}
+		}
+	}
+}
 .contPrestation {
 	display: flex;
 	flex-direction: column;
@@ -37,10 +118,10 @@
 	}
 
 	.contImgTitle {
-		position: absolute;
+		position: relative;
 		margin-top: 0;
-		top: 10px;
-		left: 60vw;
+		// top: 10px;
+		// left: 60vw;
 		// width: 100%;
 		svg {
 			width: 30vw;
