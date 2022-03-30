@@ -88,6 +88,7 @@
 					opacity: 1;
 					color: #000;
 					font-weight: bold;
+					font-style: italic;
 				}
 			}
 			.merci {
@@ -127,6 +128,11 @@
 			input {
 				// padding: 0;
 				width: 45%;
+			}
+			textarea {
+				&::placeholder {
+					font-style: italic;
+				}
 			}
 			.email {
 				margin-top: 10px;

@@ -9,11 +9,11 @@ import image2 from "../images/carou2.webp";
 import image3 from "../images/carou3.webp";
 import image4 from "../images/carou4.webp";
 import image5 from "../images/carou5.webp";
-import full1 from "../images/full1.jpeg";
-import full2 from "../images/full2.jpeg";
-import full3 from "../images/full3.jpeg";
+import full1 from "../images/full1_1.jpeg";
+import full2 from "../images/full2_1.jpeg";
+import full3 from "../images/full3_1.jpeg";
 import full4 from "../images/full4.jpeg";
-import full5 from "../images/full5.jpg";
+import full5 from "../images/full5_1.jpg";
 // Core modules imports are same as usual
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
