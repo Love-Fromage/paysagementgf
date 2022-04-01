@@ -46,7 +46,7 @@ const Footer = (props) => {
 						</div>
 						<div className={classes.email}>
 							<p>fernando@paysagementgf.com</p>
-							<a href="tel:5146387692">514 638 7692</a>
+							<a href="tel:5146387692">(514) 638-7692</a>
 						</div>
 					</div>
 					<div className={classes.footerRouge}>

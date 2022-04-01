@@ -883,7 +883,7 @@ const Header = (props) => {
 						</div>
 					</div>
 					<div className={classes.contPhone}>
-						<a href="tel:5146387692">514 638 7692</a>
+						<a href="tel:5146387692">(514) 638-7692</a>
 					</div>
 				</div>
 			)}
